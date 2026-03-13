@@ -3,259 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Portfolio website for Francis Chileshe, a web development student and frontend builder.">
+    <title>Francis Chileshe | Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!--
-    ============================================================
-    ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE
-    CSC4035 Web Programming and Technologies
+    <!-- CSS-only theme switch input -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle__input" aria-label="Toggle dark mode">
 
-    Instructions:
-    1. Complete all TODO sections below
-    2. Use semantic HTML5 elements
-    3. Ensure all images have alt attributes
-    4. Ensure all form inputs have labels
-    5. Test responsiveness at multiple breakpoints
-    ============================================================
-    -->
-
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
-            -->
-            <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
-            </div>
-            <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <!-- TODO: Create hero section
-                 Requirements:
-                 - Your name (h1)
-                 - Professional tagline
-                 - Call-to-action button
-                 - Consider using Flexbox for layout
-            -->
-            <div class="hero__content">
-                <h1>Your Name</h1>
-                <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
-                </p>
-                <a href="#contact" class="btn btn--primary">Get In Touch</a>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <!-- TODO: Create about section
-                 Requirements:
-                 - Section heading (h2)
-                 - Profile image with alt text
-                 - Professional bio (150+ words)
-                 - Skills list
-                 - Use CSS Grid or Flexbox for layout
-            -->
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about__content">
-                    <div class="about__image">
-                        <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
-                    </div>
-                    <div class="about__text">
-                        <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
-                        </p>
-                        <h3>Skills</h3>
-                        <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <!-- Add more skills -->
-                        </ul>
-                    </div>
+    <div class="site">
+        <!-- Site header with primary navigation links -->
+        <header class="header">
+            <nav class="nav container" aria-label="Main navigation">
+                <div class="nav__logo">
+                    <a href="#home">Francis Chileshe</a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <!-- TODO: Create projects section
-                 Requirements:
-                 - Section heading (h2)
-                 - Minimum 3 project cards
-                 - Each card: image, title, description, link(s)
-                 - Use CSS Grid for card layout
-            -->
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="projects__grid">
-                    <!-- Project Card 1 -->
-                    <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
-                        <div class="project-card__content">
-                            <h3>Project Title 1</h3>
-                            <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
-                            </p>
-                            <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Card 2 -->
-                    <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
-                        <div class="project-card__content">
-                            <h3>Project Title 2</h3>
-                            <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
-                            </p>
-                            <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Card 3 -->
-                    <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
-                        <div class="project-card__content">
-                            <h3>Project Title 3</h3>
-                            <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
-                            </p>
-                            <div class="project-card__links">
-                                <a href="#" class="btn btn--small">Live Demo</a>
-                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- TODO: Add more project cards if desired -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <!-- TODO: Create contact section
-                 Requirements:
-                 - Section heading (h2)
-                 - Contact form with:
-                   - Name field (required)
-                   - Email field (required, type="email")
-                   - Message textarea (required)
-                   - Submit button
-                 - All inputs must have associated labels
-                 - Use HTML5 validation attributes
-            -->
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form class="contact__form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            placeholder="Your Name"
-                            minlength="2"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            placeholder="your.email@example.com"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="What is this regarding?"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows="5"
-                            placeholder="Your message..."
-                            minlength="10"
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <!-- TODO: Create footer
-             Requirements:
-             - Copyright notice
-             - Social media links (optional)
-             - Back to top link (optional)
-        -->
-        <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-            <nav class="footer__social">
-                <!-- TODO: Add your social media links -->
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
+                <!-- CSS-only mobile menu toggle -->
+                <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Toggle navigation menu">
+                <label for="nav-toggle" class="nav__burger" aria-label="Open or close menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav__menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <label for="theme-toggle" class="theme-toggle" aria-label="Switch between light and dark theme">
+                    <span class="theme-toggle__track">
+                        <span class="theme-toggle__thumb"></span>
+                    </span>
+                    <span class="theme-toggle__status">
+                        <span class="theme-toggle__mode theme-toggle__mode--light">Light mode</span>
+                        <span class="theme-toggle__mode theme-toggle__mode--dark">Dark mode</span>
+                    </span>
+                </label>
             </nav>
-        </div>
-    </footer>
+        </header>
+
+        <main>
+            <!-- Hero section: first impression and CTA -->
+            <section id="home" class="hero">
+                <div class="hero__content container">
+                    <p class="hero__eyebrow">Final Year UNZA Computer Science Student</p>
+                    <h1>Designing clear, responsive web experiences.</h1>
+                    <p class="hero__tagline">
+                        I build clean and accessible interfaces while growing my expertise in networking and information security.
+                    </p>
+                    <a href="#contact" class="btn btn--primary">Contact Me</a>
+                </div>
+            </section>
+
+            <!-- About section: bio and skill tags -->
+            <section id="about" class="about">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <div class="about__content">
+                        <div class="about__image">
+                            <img src="images/francis_chileshe.jpg" alt="Portrait of Francis Chileshe">
+                        </div>
+                        <div class="about__text">
+                            <p>
+                                I am Francis Chileshe, a final-year Computer Science student at the University of Zambia (UNZA) with a strong academic interest in Networking and Information Security and a growing passion for web development. I enjoy designing and building web pages that are clean, responsive, and easy to use across different devices. Through my studies and practical work, I have developed a solid foundation in HTML5, CSS3, semantic structure, responsive design, and modern layout techniques such as Flexbox and CSS Grid.
+                            </p>
+                            <p>
+                                I am particularly interested in how good web design goes beyond appearance and also includes usability, accessibility, performance, and maintainability. My background in security also shapes the way I think about development, because I believe digital systems should be built with reliability, structure, and trust in mind from the start. This has helped me appreciate the importance of writing organized code, planning layouts carefully, and testing designs across screen sizes.
+                            </p>
+                            <p>
+                                As I continue improving my front-end skills, I also want to deepen my knowledge of secure systems, infrastructure, and software quality. My long-term goal is to become a well-rounded computing professional who can build solutions that are not only visually effective, but also dependable, user-friendly, and secure.
+                            </p>
+                            <h3>Skills</h3>
+                            <ul class="skills-list">
+                                <li>HTML5</li>
+                                <li>Java</li>
+                                <li>SQL</li>
+                                <li>Python</li>
+                                <li>Linux Administration</li>
+                                <li>JavaScript</li>
+                                <li>Problem Solving</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects section: portfolio cards -->
+            <section id="projects" class="projects">
+                <div class="container">
+                    <h2>My Projects</h2>
+                    <div class="projects__grid">
+                        <article class="project-card">
+                            <img src="images/netcop-cover.svg" alt="Terminal-style cover image for NetCop V2.1 smart traffic analyzer">
+                            <div class="project-card__content">
+                                <h3>NetCop V2.1 - Smart Traffic Analyzer</h3>
+                                <p>
+                                    A lightweight CLI-based Python tool that captures live packets with Scapy, detects DoS and port-scan anomalies, and stores evidence in timestamped CSV logs plus SQLite for forensic analysis.
+                                </p>
+                                <div class="project-card__links">
+                                    <a href="https://github.com/francischileshe991-eng/NetCop.git" class="btn btn--small btn--outline">Source Code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="images/honeypot-cover.svg" alt="Architecture-style cover image for Python low-interaction network honeypot project">
+                            <div class="project-card__content">
+                                <h3>Python Low-Interaction Network Honeypot</h3>
+                                <p>
+                                    A modular multi-threaded honeypot that emulates SSH and HTTP services, logs attacker behavior in real time, detects brute-force and suspicious payloads, and includes post-capture analysis reports.
+                                </p>
+                                <div class="project-card__links">
+                                    <a href="https://github.com/francischileshe991-eng/laughing-bassoon.git" class="btn btn--small btn--outline">Source Code</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="images/handyhubzm-screenshot.png" alt="Homepage screenshot of the HandyHubZM local service marketplace project">
+                            <div class="project-card__content">
+                                <h3>HandyHubZM - Local Service Marketplace</h3>
+                                <p>
+                                    A web platform concept that connects users with local service providers through clear category pages, responsive navigation, and practical mobile-first interface design.
+                                </p>
+                                <div class="project-card__links">
+                                    <a href="https://remarkable-raindrop-f0b6d7.netlify.app/" class="btn btn--small">Live Demo</a>
+                                    <a href="https://github.com/francischileshe991-eng" class="btn btn--small btn--outline">Source Code</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact section: validated HTML form -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <form class="contact__form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                placeholder="Your Name"
+                                minlength="2"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="your.email@example.com"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What is this regarding?"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                rows="5"
+                                placeholder="Your message..."
+                                minlength="10"
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer with social links and top anchor -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Francis Chileshe. All rights reserved.</p>
+                <nav class="footer__social" aria-label="Social links">
+                    <a href="https://github.com/francischileshe991-eng" aria-label="GitHub profile">GitHub</a>
+                    <a href="https://www.linkedin.com/in/francis-chileshe-34ab93264/" aria-label="LinkedIn profile">LinkedIn</a>
+                    <a href="#home" aria-label="Back to top">Top</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

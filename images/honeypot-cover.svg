@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Honeypot Architecture Cover</title>
+  <desc id="desc">Architecture style project cover image for Python low-interaction network honeypot.</desc>
+  <rect width="1200" height="700" fill="#f8fafc"/>
+  <text x="70" y="90" font-family="Segoe UI, sans-serif" font-size="46" font-weight="700" fill="#0f172a">Python Low-Interaction Honeypot</text>
+  <text x="70" y="130" font-family="Segoe UI, sans-serif" font-size="24" fill="#334155">SSH/HTTP emulation, IDS detection, and post-capture analysis</text>
+
+  <rect x="90" y="190" width="280" height="140" rx="14" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="125" y="250" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#1e293b">Attackers</text>
+  <text x="125" y="285" font-family="Segoe UI, sans-serif" font-size="22" fill="#475569">Scanners / Bots</text>
+
+  <rect x="470" y="150" width="300" height="120" rx="14" fill="#dbeafe" stroke="#60a5fa"/>
+  <text x="520" y="215" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#1e3a8a">SSH Service</text>
+  <text x="540" y="245" font-family="Segoe UI, sans-serif" font-size="20" fill="#1d4ed8">Port 2222</text>
+
+  <rect x="470" y="300" width="300" height="120" rx="14" fill="#dcfce7" stroke="#4ade80"/>
+  <text x="515" y="365" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#14532d">HTTP Service</text>
+  <text x="540" y="395" font-family="Segoe UI, sans-serif" font-size="20" fill="#15803d">Port 8080</text>
+
+  <rect x="860" y="165" width="260" height="120" rx="14" fill="#fee2e2" stroke="#f87171"/>
+  <text x="930" y="230" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#7f1d1d">IDS</text>
+  <text x="890" y="260" font-family="Segoe UI, sans-serif" font-size="18" fill="#991b1b">Flood + Payload Detection</text>
+
+  <rect x="860" y="320" width="260" height="120" rx="14" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="900" y="385" font-family="Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#78350f">Log Analyzer</text>
+  <text x="898" y="415" font-family="Segoe UI, sans-serif" font-size="18" fill="#92400e">Attacker Statistics</text>
+
+  <line x1="370" y1="260" x2="470" y2="210" stroke="#334155" stroke-width="4"/>
+  <line x1="370" y1="260" x2="470" y2="360" stroke="#334155" stroke-width="4"/>
+  <line x1="770" y1="210" x2="860" y2="225" stroke="#334155" stroke-width="4"/>
+  <line x1="770" y1="360" x2="860" y2="380" stroke="#334155" stroke-width="4"/>
+
+  <text x="70" y="620" font-family="Consolas, 'Courier New', monospace" font-size="24" fill="#0f172a">core/ssh_service.py | core/http_service.py | detection/ids.py | detection/analyzer.py</text>
+</svg>

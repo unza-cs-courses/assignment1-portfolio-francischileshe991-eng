@@ -112,37 +112,39 @@ The following are checked automatically on each push:
 
 Before submitting, verify:
 
-- [ ] All 4 sections are complete (Home, About, Projects, Contact)
-- [ ] HTML validates with no errors
-- [ ] CSS uses custom properties (variables)
-- [ ] Flexbox is used for at least one component
-- [ ] CSS Grid is used for at least one component
-- [ ] Site is responsive at all breakpoints
-- [ ] All images have alt text
-- [ ] Form inputs have labels
-- [ ] Screenshots added to `/screenshots` folder
-- [ ] README updated with your information
+- [x] All 4 sections are complete (Home, About, Projects, Contact)
+- [x] HTML validates with no errors
+- [x] CSS uses custom properties (variables)
+- [x] Flexbox is used for at least one component
+- [x] CSS Grid is used for at least one component
+- [x] Site is responsive at all breakpoints
+- [x] All images have alt text
+- [x] Form inputs have labels
+- [x] Screenshots added to `/screenshots` folder
+- [x] README updated with your information
 
 ---
 
 ## Your Information
 
-**Name:** [Your Name]
-**Student ID:** [Your Student ID]
-**Design Theme:** [Describe your portfolio theme/style]
+**Name:** Francis Chileshe
+**Student ID:** 2022014855
+**Design Theme:** Clean modern portfolio with a mobile-first responsive layout, teal and slate color palette, card-based project presentation, subtle gradients, and a CSS-only light/dark mode.
 
 ### CSS Techniques Used
-- [ ] CSS Custom Properties
-- [ ] Flexbox
-- [ ] CSS Grid
-- [ ] Media Queries
-- [ ] Other: _______________
+- [x] CSS Custom Properties
+- [x] Flexbox
+- [x] CSS Grid
+- [x] Media Queries
+- [x] Other: Sticky navigation, CSS-only dark mode, CSS-only hamburger menu, transitions, and print stylesheet
 
 ### Challenges & Solutions
-[Describe any challenges you faced and how you solved them]
+Building a layout that stays readable across mobile, tablet, and desktop widths required balancing spacing, font sizes, and card dimensions. I solved this by starting with a single-column mobile design, then progressively enhancing with `@media` breakpoints at `768px`, `1024px`, and `1200px`. I used Flexbox for navigation and grouped controls, and CSS Grid for the About and Projects layouts to keep structure consistent at larger sizes. I also improved accessibility by using clear heading hierarchy, form labels, `required` fields, visible focus states, and descriptive alt text.
 
 ### Credits
-[List any images, fonts, or resources used with attribution]
+- Profile image: personal photo used for the portfolio profile section.
+- Project artwork: locally created SVG and PNG images stored in the `images` directory.
+- Fonts: system UI stack (`Segoe UI`, `Tahoma`, `Geneva`, `Verdana`, `sans-serif`).
 
 ---
 
